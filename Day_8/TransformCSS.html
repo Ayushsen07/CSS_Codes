@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform in CSS</title>
+    <style>
+        .CONTAINER{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      .box {
+        height: 300px;
+        width: 300px;
+        border: solid black 3px;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: auto; */
+        transition: all 1s linear;
+      }
+      p {
+        font-size: 2em;
+      }
+
+      .box:hover {
+        transform: rotate(45deg);    
+        background-color: #d82626;
+
+         transform: scale(1.2); /* this increase the size of the box according to value if you give 2 so do it double size */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="CONTAINER">
+      <div class="box">
+        <p>Hello jee kese hai</p>
+      </div>
+    </div>
+  </body>
+</html>

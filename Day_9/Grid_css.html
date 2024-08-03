@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS</title>
+    <style>
+        *{
+            margin: 0;  
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container{
+            background-color: rgb(37, 34, 34);
+            height: 100%;
+            width: 100%;
+            padding: 4rem;
+            display: grid;
+            row-gap: 1rem;
+            column-gap: 1rem;
+            /* grid-template-rows: 1fr 1fr; */
+            grid-template-columns: repeat(1, 1fr);
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-rows: repeat(6,1fr);
+             
+        }
+        .item{
+            background-color: rgb(69, 69, 242);
+            border: 2px solid black;
+            padding: 5px;
+        }
+       
+        @media (min-width :768px)  {
+            .header, .footer{
+            grid-column-start:1 ;
+            grid-column-end: 4;
+        }
+        .sidebar{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end:2 ;
+        }
+        .content{
+            grid-column-start:2 ;
+            grid-column-end: 4;
+        }
+        .container{
+        grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-rows: repeat(4,1fr);
+        }
+              
+        } 
+            
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">header</div>
+        <div class="item sidebar">sidebar</div>
+        <div class="item content">content</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item footer">footer</div>
+        </div>
+</body>
+</html>

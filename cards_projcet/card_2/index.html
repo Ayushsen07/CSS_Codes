@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(110, 134, 243);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        height: 600px;
+        width: 350px;
+        background-color: #fff;
+        border-radius: 20px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .card img {
+        width: 350px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      #accountBox{
+        height: 50px;
+        width: 300px;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #9ed5ed;
+        display: flex;
+        justify-content: space-between;
+      }
+      .card button {
+        height: 40px;
+        width: 200px;
+        border: 2px;
+        background-color: #2f28b8;
+        color: azure;
+        border-radius: 5px;
+      }
+      .card span {
+        font-weight: bold;
+      }
+      .card .textBox{
+        display: flex;
+        text-align: center;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="image.png" alt="" />
+        <h2>Product Summary</h2>
+        <div class="textBox">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            itaque...!
+          </p>
+        </div>
+        <div id="accountBox">
+          <span>Annual Plan <br />399/-year</span>
+
+          <a href="#">Change</a>
+        </div>
+        <button>Proceed To Payment</button>
+
+        <span>Cancal Order</span>
+      </div>
+    </div>
+  </body>
+</html>
